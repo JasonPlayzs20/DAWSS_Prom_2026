@@ -1,0 +1,10 @@
+THINGS TO DO FOR PROM WEBSITE
+
+ESSENTIAL COMPONENTS (Student Side):
+    - Login Page
+        - Login using School ID
+    - Seating
+        - Total number of seats
+        - Pick which seat you want to sit in
+    - Payment methods
+        - TBD
