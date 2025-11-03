@@ -11,3 +11,5 @@ class User(db.Model, UserMixin):
     has_paid = db.Column(db.Boolean, default=False)
     can_select_seat = db.Column(db.Boolean, default=False)
     bringing_guest = db.Column(db.Boolean, default=False)
+    signed_seat = db.Column(db.String(50), nullable=True)
+
