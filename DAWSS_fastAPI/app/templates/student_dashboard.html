@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Dashboard - Prom 2025</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <a href="/" class="logo">Prom 2025 ✨</a>
+        <div class="nav-links">
+            <span id="user-name" class="user-greeting"></span>
+            <button onclick="logout()" class="btn btn-outline">Logout</button>
+        </div>
+    </div>
+</nav>
+
+<div class="dashboard-container">
+    <div class="container">
+        <h1>My Dashboard</h1>
+
+        <!-- Booking Status Card -->
+        <div class="dashboard-card" id="booking-status">
+            <div class="card-header">
+                <h2>Booking Status</h2>
+            </div>
+            <div class="card-body" id="booking-content">
+                <div class="loading">Loading your booking information...</div>
+            </div>
+        </div>
+
+        <!-- Quick Actions -->
+        <div class="dashboard-actions">
+            <a href="/student/seating" class="action-card" id="view-seats-card">
+                <div class="action-icon">💺</div>
+                <h3>View Seating Chart</h3>
+                <p>Browse available seats and tables</p>
+            </a>
+
+            <a href="/student/booking" class="action-card" id="manage-booking-card" style="display: none;">
+                <div class="action-icon">🎫</div>
+                <h3>Manage Booking</h3>
+                <p>View and manage your reservation</p>
+            </a>
+        </div>
+
+        <!-- Event Info -->
+        <div class="info-banner">
+            <h3>📅 Event Information</h3>
+            <div class="info-grid">
+                <div><strong>Date:</strong> June 15, 2025</div>
+                <div><strong>Time:</strong> 7:00 PM - 12:00 AM</div>
+                <div><strong>Venue:</strong> Grand Ballroom</div>
+                <div><strong>Ticket Price:</strong> $50</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="/static/js/student.js"></script>
+</body>
+</html>

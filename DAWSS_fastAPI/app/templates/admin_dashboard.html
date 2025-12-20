@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Prom 2025</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+<nav class="navbar">
+    <div class="container">
+        <a href="/" class="logo">Prom 2025 ✨</a>
+        <div class="nav-links">
+            <a href="/admin/bookings" class="btn btn-outline">Bookings</a>
+            <a href="/admin/users" class="btn btn-outline">Users</a>
+            <a href="/admin/seating" class="btn btn-outline">Seating</a>
+            <button onclick="logout()" class="btn btn-outline">Logout</button>
+        </div>
+    </div>
+</nav>
+<div class="container" style="padding:2rem 0;">
+    <h1>Admin Dashboard</h1>
+    <p class="auth-subtitle">Placeholder admin dashboard page.</p>
+</div>
+<script>
+function logout(){ localStorage.removeItem('token'); localStorage.removeItem('user'); window.location.href='/'; }
+</script>
+</body>
+</html>
